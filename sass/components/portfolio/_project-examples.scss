@@ -1,15 +1,25 @@
 .example-set {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-left: -30px;
-  margin-bottom: -30px;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
 }
 
 .example-set__item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-bottom: 30px;
+  @include tablet {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  @include desktop {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .example {

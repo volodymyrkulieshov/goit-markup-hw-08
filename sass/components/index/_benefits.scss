@@ -1,65 +1,30 @@
 .benefits__list {
-  @include flex-centered();
-}
-
-.benefits__item {
-  width: 270px;
-
-  &:not(:first-child) {
-    margin-left: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }
 
-.benefits__icon--satelite::before {
-  display: inline-block;
-  content: '';
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-image: url(../images/antenna.svg);
-  background-color: #f5f4fa;
-  background-repeat: no-repeat;
-  background-size: 65px 70px;
-  background-position: center;
+.benefits__item {
+  @media screen and (max-width: 480px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
-.benefits__icon--clock::before {
-  display: inline-block;
-  content: '';
-  width: 270px;
+.benefits__icon {
+  @include flex-centered();
   height: 120px;
   margin-bottom: 30px;
-  background-image: url(../images/clock.svg);
-  background-color: #f5f4fa;
-  background-repeat: no-repeat;
-  background-size: 65px 70px;
-  background-position: center;
-}
-
-.benefits__icon--diagram::before {
-  display: inline-block;
-  content: '';
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-image: url(../images/diagram.svg);
-  background-color: #f5f4fa;
-  background-repeat: no-repeat;
-  background-size: 65px 70px;
-  background-position: center;
-}
-
-.benefits__icon--astronaut::before {
-  display: inline-block;
-  content: '';
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-image: url(../images/astronaut.svg);
-  background-color: #f5f4fa;
-  background-repeat: no-repeat;
-  background-size: 65px 70px;
-  background-position: center;
+  border-radius: 4px;
+  background-color: $filter-bgc;
 }
 
 .benefits__title {
@@ -68,7 +33,7 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
-
+  text-align: center;
   text-transform: uppercase;
 
   margin-bottom: 10px;
