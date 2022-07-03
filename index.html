@@ -167,19 +167,35 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="opportunities__list list">
             <li class="opportunities__item">
-              <img src="./images/coding.jpg" alt="coding" width="370" />
+              <picture>
+                <source srcset="./images/coding.jpg 1x, ./images/adaptive-img/coding.jpg 2x" />
+                <img src="./images/coding.jpg" alt="coding" width="370" />
+              </picture>
               <p class="opportunities__text">Десктопные приложения</p>
             </li>
             <li class="opportunities__item">
-              <img
-                src="./images/application-development.jpg"
-                alt="application-development"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/application-development.jpg              1x,
+                    ./images/adaptive-img/application-development.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/application-development.jpg"
+                  alt="application-development"
+                  width="370"
+                />
+              </picture>
+
               <p class="opportunities__text">Мобильные приложения</p>
             </li>
             <li class="opportunities__item">
-              <img src="./images/design.jpg" alt="design" width="370" />
+              <picture>
+                <source srcset="./images/design.jpg 1x, ./images/adaptive-img/design.jpg 2x" />
+                <img src="./images/design.jpg" alt="design" width="370" />
+              </picture>
+
               <p class="opportunities__text">Дизайнерские решения</p>
             </li>
           </ul>
