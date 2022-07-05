@@ -45,12 +45,12 @@
           <nav class="nav">
             <ul class="nav__list list">
               <li class="nav__item">
-                <a class="nav__link nav__link--current" href="./index.html">Студия</a>
+                <a class="nav__link nav__link--current" href="./index.html">Студія</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="./portfolio.html">Портфолио</a>
+                <a class="nav__link" href="./portfolio.html">Портфоліо</a>
               </li>
-              <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+              <li class="nav__item"><a class="nav__link" href="">Контанти</a></li>
             </ul>
           </nav>
 
@@ -99,10 +99,10 @@
       <section class="hero container">
         <div class="">
           <h1 class="hero__title">
-            Эффективные решения<br />
-            для вашего бизнеса
+            Ефективні рішення<br />
+            для вашего бізнесу
           </h1>
-          <button class="button" type="button" data-modal-open>Заказать услугу</button>
+          <button class="button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- benefits -->
@@ -117,9 +117,9 @@
                 </svg>
               </div>
 
-              <h3 class="benefits__title">Внимание к деталям</h3>
+              <h3 class="benefits__title">Увага до деталей</h3>
               <p class="benefits__text">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
+                Ідейні міркування, та початок повсякденної роботи з формування позиції.
               </p>
             </li>
             <li class="benefits__item">
@@ -129,9 +129,9 @@
                 </svg>
               </div>
 
-              <h3 class="benefits__title">Пунктуальность</h3>
+              <h3 class="benefits__title">Пунктуальність</h3>
               <p class="benefits__text">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                Завдання організації, особливо рамки і місце навчання кадрів.
               </p>
             </li>
             <li class="benefits__item">
@@ -141,9 +141,9 @@
                 </svg>
               </div>
 
-              <h3 class="benefits__title">Планирование</h3>
+              <h3 class="benefits__title">Планування</h3>
               <p class="benefits__text">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
+                Консультація з широким активом значною мірою зумовлює планування.
               </p>
             </li>
             <li class="benefits__item">
@@ -153,9 +153,9 @@
                 </svg>
               </div>
 
-              <h3 class="benefits__title">Современные технологии</h3>
+              <h3 class="benefits__title">Сучасні технології</h3>
               <p class="benefits__text">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                Значимість цих проблем настільки очевидна, що і реалізація планових завдань.
               </p>
             </li>
           </ul>
@@ -164,21 +164,21 @@
       <!-- opportunities -->
       <section class="opportunities section">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
+          <h2 class="section-title">Чим ми займаємось</h2>
           <ul class="opportunities__list list">
             <li class="opportunities__item">
               <picture>
-                <source srcset="./images/coding.jpg 1x, ./images/adaptive-img/coding.jpg 2x" />
+                <source srcset="./images/coding.jpg 1x, ./images/adaptive-img/coding@2x.jpg 2x" />
                 <img src="./images/coding.jpg" alt="coding" width="370" />
               </picture>
-              <p class="opportunities__text">Десктопные приложения</p>
+              <p class="opportunities__text">Десктопні додатки</p>
             </li>
             <li class="opportunities__item">
               <picture>
                 <source
                   srcset="
-                    ./images/application-development.jpg              1x,
-                    ./images/adaptive-img/application-development.jpg 2x
+                    ./images/application-development.jpg                 1x,
+                    ./images/adaptive-img/application-development@2x.jpg 2x
                   "
                 />
                 <img
@@ -188,15 +188,15 @@
                 />
               </picture>
 
-              <p class="opportunities__text">Мобильные приложения</p>
+              <p class="opportunities__text">Мобільні додатки</p>
             </li>
             <li class="opportunities__item">
               <picture>
-                <source srcset="./images/design.jpg 1x, ./images/adaptive-img/design.jpg 2x" />
+                <source srcset="./images/design.jpg 1x, ./images/adaptive-img/design@2x.jpg 2x" />
                 <img src="./images/design.jpg" alt="design" width="370" />
               </picture>
 
-              <p class="opportunities__text">Дизайнерские решения</p>
+              <p class="opportunities__text">Дизайнерскі рішення</p>
             </li>
           </ul>
         </div>
@@ -207,9 +207,29 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img src="./images/igor.jpg" alt="employee1" width="270" />
+              <picture>
+                <source
+                  srcset="./images/igor.jpg 1x, ./images/adaptive-img/igor-desktop@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/adaptive-img/igor-tablet.jpg    1x,
+                    ./images/adaptive-img/igor-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/adaptive-img/igor-mobile.jpg    1x,
+                    ./images/adaptive-img/igor-mobile@2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img src="./images/igor.jpg" alt="employee1" width="270" />
+              </picture>
               <div class="employeer-card">
-                <h3 class="team__name">Игорь Демьяненко</h3>
+                <h3 class="team__name">Ігор Демьяненко</h3>
                 <p class="team__pos" lang="en">Product Designer</p>
                 <ul class="team-network list">
                   <li class="team-network__item">
@@ -244,9 +264,30 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/olga.jpg" alt="employee2" width="270" />
+              <picture>
+                <source
+                  srcset="./images/olga.jpg 1x, ./images/adaptive-img/olga-desktop@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/adaptive-img/olga-tablet.jpg    1x,
+                    ./images/adaptive-img/olga-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/adaptive-img/olga-mobile.jpg    1x,
+                    ./images/adaptive-img/olga-mobile@2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img src="./images/olga.jpg" alt="employee2" width="270" />
+              </picture>
+
               <div class="employeer-card">
-                <h3 class="team__name">Ольга Репина</h3>
+                <h3 class="team__name">Ольга Репіна</h3>
                 <p class="team__pos" lang="en">Frontend Developer</p>
                 <ul class="team-network list">
                   <li class="team-network__item">
@@ -281,9 +322,30 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/mykola.jpg" alt="employee3" width="270" />
+              <picture>
+                <source
+                  srcset="./images/mykola.jpg 1x, ./images/adaptive-img/mykola-desktop@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/adaptive-img/mykola-tablet.jpg    1x,
+                    ./images/adaptive-img/mykola-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/adaptive-img/mykola-mobile.jpg    1x,
+                    ./images/adaptive-img/mykola-mobile@2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img src="./images/mykola.jpg" alt="employee3" width="270" />
+              </picture>
+
               <div class="employeer-card">
-                <h3 class="team__name">Николай Тарасов</h3>
+                <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__pos" lang="en">Marketing</p>
                 <ul class="team-network list">
                   <li class="team-network__item">
@@ -318,9 +380,30 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/mike.jpg" alt="employee4" width="270" />
+              <picture>
+                <source
+                  srcset="./images/mike.jpg 1x, ./images/adaptive-img/mike-desktop@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/adaptive-img/mike-tablet.jpg    1x,
+                    ./images/adaptive-img/mike-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/adaptive-img/mike-mobile.jpg    1x,
+                    ./images/adaptive-img/mike-mobile@2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img src="./images/mike.jpg" alt="employee4" width="270" />
+              </picture>
+
               <div class="employeer-card">
-                <h3 class="team__name">Михаил Ермаков</h3>
+                <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__pos" lang="en">UI Designer</p>
                 <ul class="team-network list">
                   <li class="team-network__item">
@@ -360,7 +443,7 @@
       <!-- clients -->
       <section class="clients section">
         <div class="container">
-          <h2 class="section-title">Постоянные клиенты</h2>
+          <h2 class="section-title">Постійні клієнти</h2>
           <ul class="clients list">
             <li class="clients__item">
               <a class="clients__link link" href="">
@@ -425,7 +508,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    г. Киев,Бульвар Леси Украинки,26</a
+                    г. Київ,Бульвар Лесі Українки,26</a
                   >
                 </li>
                 <li class="address__item">
@@ -441,7 +524,7 @@
           </div>
 
           <div class="footer__join">
-            <p class="footer__title">присоединяйтесь</p>
+            <p class="footer__title">Приєднуйтесь</p>
             <ul class="networks list">
               <li class="networks__item">
                 <a class="networks__link link" href="">
@@ -477,7 +560,7 @@
 
         <!-- SUBSCRIBE -->
         <div class="footer__subscribe">
-          <p class="footer__title">Подпишитесь на рассылку</p>
+          <p class="footer__title">Підпишіться на розсилку</p>
           <form class="subscribe-form">
             <label class="subscribe__label">
               <input
@@ -488,7 +571,7 @@
                 required
             /></label>
             <button class="subscribe__btn" type="submit">
-              Подписаться
+              Підписатись
               <svg class="subscribe__icon" width="24" height="24">
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
@@ -507,11 +590,11 @@
             <use href="./images/sprite.svg#icon-close-modal"></use>
           </svg>
         </button>
-        <p class="modal__title title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__title title">Залиште свої дані, ми з вами зв'яжемось</p>
         <form class="modal-form">
           <div class="modal-form__field">
             <label for="name" class="modal-form__label"
-              >Имя
+              >Ім'я
               <div class="label-icon">
                 <input class="modal-form__imput" type="text" name="user-name" id="name" required />
                 <svg class="modal-form__icon" width="18" height="18">
@@ -531,7 +614,7 @@
           </div>
           <div class="modal-form__field">
             <label for="email" class="modal-form__label"
-              >Почта
+              >Пошта
               <div class="label-icon">
                 <input
                   class="modal-form__imput"
@@ -546,7 +629,7 @@
             ></label>
           </div>
           <label class="modal-form__label"
-            >Комментарий
+            >Коментарій
             <textarea
               class="modal-form__comment"
               name="user-comment"
@@ -569,12 +652,12 @@
               </span>
 
               <span class="agreement__text"
-                >Соглашаюсь с рассылкой и принимаю
-                <a class="agreement__link link" href="">Условия договора</a></span
+                >Погоджуюсь на розсилку та приймаю
+                <a class="agreement__link link" href="">Умови договору</a></span
               >
             </label>
           </div>
-          <button class="modal-form__submit button" type="submit">Отправить</button>
+          <button class="modal-form__submit button" type="submit">Відправити</button>
         </form>
       </div>
     </div>

@@ -35,7 +35,7 @@
           aria-controls="header__menu"
           data-menu-button
         >
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <svg width="40" height="40" aria-label="Open mobile menu">
             <use class="icon-close" href="./images/sprite.svg#icon-close-menu"></use>
             <use class="icon-menu" href="./images/sprite.svg#icon-mobile-menu"></use>
           </svg>
@@ -45,12 +45,12 @@
           <nav class="nav">
             <ul class="nav__list list">
               <li class="nav__item">
-                <a class="nav__link nav__link--current" href="./index.html">Студия</a>
+                <a class="nav__link" href="./index.html">Студія</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="./portfolio.html">Портфолио</a>
+                <a class="nav__link nav__link--current" href="./portfolio.html">Портфоліо</a>
               </li>
-              <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+              <li class="nav__item"><a class="nav__link" href="">Контанти</a></li>
             </ul>
           </nav>
 
@@ -100,13 +100,13 @@
           <h1 class="visually-hidden">Work examples(hide)</h1>
           <ul class="filter-list list">
             <li class="filter__item filter__item--margin">
-              <button class="filter__bnt" type="button">Все</button>
+              <button class="filter__bnt" type="button">Всі</button>
             </li>
             <li class="filter__item filter__item--margin">
-              <button class="filter__bnt" type="button">Веб-сайты</button>
+              <button class="filter__bnt" type="button">Веб-сайти</button>
             </li>
             <li class="filter__item filter__item--margin">
-              <button class="filter__bnt" type="button">Приложения</button>
+              <button class="filter__bnt" type="button">Додатки</button>
             </li>
             <li class="filter__item filter__item--margin">
               <button class="filter__bnt" type="button">Дизайн</button>
@@ -119,7 +119,31 @@
             <li class="example-set__item">
               <a href="" class="example link">
                 <div class="example__box">
-                  <img src="./images/web-site.jpg" alt="web-site" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/web-site.jpg                         1x,
+                        ./images/adaptive-img/web-site-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/adaptive-img/web-site-tablet.jpg    1x,
+                        ./images/adaptive-img/web-site-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/adaptive-img/web-site-mobile.jpg    1x,
+                        ./images/adaptive-img/web-site-mobile@2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                    />
+                    <img src="./images/web-site.jpg" alt="web-site" width="370" />
+                  </picture>
+
                   <p class="example__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est itaque cumque
                     autem assumenda sed illum totam nisi vel hic voluptas sequi, neque sapiente
@@ -136,15 +160,39 @@
             <li class="example-set__item">
               <a href="" class="example link">
                 <div class="example__box">
-                  <img src="./images/basketball-poster.jpg" alt="web-site" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/basketball-poster.jpg                  1x,
+                        ./images/adaptive-img/basketball-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/adaptive-img/basketball-tablet.jpg    1x,
+                        ./images/adaptive-img/basketball-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/adaptive-img/basketball-mobile.jpg    1x,
+                        ./images/adaptive-img/basketball-mobile@2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                    />
+                    <img src="./images/basketball-poster.jpg" alt="web-site" width="370" />
+                  </picture>
+
                   <p class="example__text">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
-                    или частном лице.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est itaque cumque
+                    autem assumenda sed illum totam nisi vel hic voluptas sequi, neque sapiente
+                    repellat, consectetur, dignissimos fugiat? Tempora, provident in.
                   </p>
                 </div>
                 <div class="example__content">
-                  <h2 class="example__title">Технокряк</h2>
+                  <h2 class="example__title">Постер New Orlean vs Golden Star</h2>
                   <p class="example__type">Веб-сайт</p>
                 </div>
               </a>
@@ -153,11 +201,35 @@
             <li class="example-set__item">
               <a href="" class="example link">
                 <div class="example__box">
-                  <img
-                    src="./images/restaurant-app.jpg"
-                    alt="application-for-restaurant"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/restaurant-app.jpg                     1x,
+                        ./images/adaptive-img/restaurant-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/adaptive-img/restaurant-tablet.jpg    1x,
+                        ./images/adaptive-img/restaurant-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/adaptive-img/restaurant-mobile.jpg    1x,
+                        ./images/adaptive-img/restaurant-mobile@2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                    />
+                    <img
+                      src="./images/restaurant-app.jpg"
+                      alt="application-for-restaurant"
+                      width="370"
+                    />
+                  </picture>
+
                   <p class="example__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est itaque cumque
                     autem assumenda sed illum totam nisi vel hic voluptas sequi, neque sapiente
@@ -167,14 +239,38 @@
 
                 <div class="example__content">
                   <h2 class="example__title">Ресторан Seafood</h2>
-                  <p class="example__type">Приложение</p>
+                  <p class="example__type">Додатки</p>
                 </div>
               </a>
             </li>
             <li class="example-set__item">
               <a href="" class="example link">
                 <div class="example__box">
-                  <img src="./images/earphones.jpg" alt="earphones" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/earphones.jpg                         1x,
+                        ./images/adaptive-img/earphones-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/adaptive-img/earphones-tablet.jpg    1x,
+                        ./images/adaptive-img/earphones-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/adaptive-img/earphones-mobile.jpg    1x,
+                        ./images/adaptive-img/earphones-mobile@2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                    />
+                    <img src="./images/earphones.jpg" alt="earphones" width="370" />
+                  </picture>
+
                   <p class="example__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est itaque cumque
                     autem assumenda sed illum totam nisi vel hic voluptas sequi, neque sapiente
@@ -190,7 +286,28 @@
             <li class="example-set__item">
               <a href="" class="example link">
                 <div class="example__box">
-                  <img src="./images/boxes.jpg" alt="boxes" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/boxes.jpg 1x, ./images/adaptive-img/boxes-desktop@2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/adaptive-img/boxes-tablet.jpg    1x,
+                        ./images/adaptive-img/boxes-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/adaptive-img/boxes-mobile.jpg    1x,
+                        ./images/adaptive-img/boxes-mobile@2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                    />
+                    <img src="./images/boxes.jpg" alt="boxes" width="370" />
+                  </picture>
+
                   <p class="example__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est itaque cumque
                     autem assumenda sed illum totam nisi vel hic voluptas sequi, neque sapiente
@@ -199,14 +316,35 @@
                 </div>
                 <div class="example__content">
                   <h2 class="example__title">Проект Boxes</h2>
-                  <p class="example__type">Приложение</p>
+                  <p class="example__type">Додатки</p>
                 </div>
               </a>
             </li>
             <li class="example-set__item">
               <a href="" class="example link">
                 <div class="example__box">
-                  <img src="./images/desktop.jpg" alt="desktop" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/desktop.jpg 1x, ./images/adaptive-img/imac-desktop@2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/adaptive-img/imac-tablet.jpg    1x,
+                        ./images/adaptive-img/imac-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/adaptive-img/imac-mobile.jpg    1x,
+                        ./images/adaptive-img/imac-mobile@2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                    />
+                    <img src="./images/desktop.jpg" alt="desktop" width="370" />
+                  </picture>
+
                   <p class="example__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est itaque cumque
                     autem assumenda sed illum totam nisi vel hic voluptas sequi, neque sapiente
@@ -222,7 +360,31 @@
             <li class="example-set__item">
               <a href="" class="example link">
                 <div class="example__box">
-                  <img src="./images/magazine.jpg" alt="magazine" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/magazine.jpg                         1x,
+                        ./images/adaptive-img/magazine-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/adaptive-img/magazine-tablet.jpg    1x,
+                        ./images/adaptive-img/magazine-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/adaptive-img/magzine-mobile.jpg     1x,
+                        ./images/adaptive-img/magazine-mobile@2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                    />
+                    <img src="./images/magazine.jpg" alt="magazine" width="370" />
+                  </picture>
+
                   <p class="example__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est itaque cumque
                     autem assumenda sed illum totam nisi vel hic voluptas sequi, neque sapiente
@@ -230,7 +392,7 @@
                   </p>
                 </div>
                 <div class="example__content">
-                  <h2 class="example__title">Издание Limited Edition</h2>
+                  <h2 class="example__title">Видання Limited Edition</h2>
                   <p class="example__type">Дизайн</p>
                 </div>
               </a>
@@ -238,7 +400,31 @@
             <li class="example-set__item">
               <a href="" class="example link">
                 <div class="example__box">
-                  <img src="./images/label-tag.jpg" alt="label-tag" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/label-tag.jpg                     1x,
+                        ./images/adaptive-img/label-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/adaptive-img/label-tablet.jpg    1x,
+                        ./images/adaptive-img/label-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/adaptive-img/label-mobile.jpg    1x,
+                        ./images/adaptive-img/label-mobile@2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                    />
+                    <img src="./images/label-tag.jpg" alt="label-tag" width="370" />
+                  </picture>
+
                   <p class="example__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est itaque cumque
                     autem assumenda sed illum totam nisi vel hic voluptas sequi, neque sapiente
@@ -254,7 +440,31 @@
             <li class="example-set__item">
               <a href="" class="example link">
                 <div class="example__box">
-                  <img src="./images/business-app.jpg" alt="business-app" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/business-app.jpg                1x,
+                        ./images/adaptive-img/app-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/adaptive-img/app-tablet.jpg    1x,
+                        ./images/adaptive-img/app-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/adaptive-img/app-mobile.jpg    1x,
+                        ./images/adaptive-img/app-mobile@2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                    />
+                    <img src="./images/business-app.jpg" alt="business-app" width="370" />
+                  </picture>
+
                   <p class="example__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est itaque cumque
                     autem assumenda sed illum totam nisi vel hic voluptas sequi, neque sapiente
@@ -263,7 +473,7 @@
                 </div>
                 <div class="example__content">
                   <h2 class="example__title">Growing Business</h2>
-                  <p class="example__type">Приложение</p>
+                  <p class="example__type">Додатки</p>
                 </div>
               </a>
             </li>
@@ -287,7 +497,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    г. Киев,Бульвар Леси Украинки,26</a
+                    г. Київ,Бульвар Лесі Українки,26</a
                   >
                 </li>
                 <li class="address__item">
@@ -303,7 +513,7 @@
           </div>
 
           <div class="footer__join">
-            <p class="footer__title">присоединяйтесь</p>
+            <p class="footer__title">Приєднуйтесь</p>
             <ul class="networks list">
               <li class="networks__item">
                 <a class="networks__link link" href="">
@@ -339,7 +549,7 @@
 
         <!-- SUBSCRIBE -->
         <div class="footer__subscribe">
-          <p class="footer__title">Подпишитесь на рассылку</p>
+          <p class="footer__title">Підпишіться на розсилку</p>
           <form class="subscribe-form">
             <label class="subscribe__label">
               <input
@@ -350,7 +560,7 @@
                 required
             /></label>
             <button class="subscribe__btn" type="submit">
-              Подписаться
+              Підписатись
               <svg class="subscribe__icon" width="24" height="24">
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
