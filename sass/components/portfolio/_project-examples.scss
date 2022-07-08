@@ -9,21 +9,26 @@
 }
 
 .example-set__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
   @include tablet {
-    flex-basis: calc(100% / 2 - 30px);
+    width: calc(100% / 2 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
   }
 
   @include desktop {
-    flex-basis: calc(100% / 3 - 30px);
+    width: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
   }
 }
 
 .example {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow $timing-duration $timing-function;
 
   &:hover,
@@ -42,6 +47,8 @@
   position: absolute;
   left: 0;
   bottom: 0;
+  flex-grow: 2;
+
   width: 100%;
   height: 100%;
   padding: 63px 24px;
@@ -49,7 +56,7 @@
   line-height: 1.56;
   color: $primary-white-color;
   background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform $timing-duration $timing-function;
 
   .example:hover &,
