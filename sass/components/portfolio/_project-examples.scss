@@ -70,7 +70,9 @@
   border-top: none;
   padding: 20px 20px;
 
-  height: 146px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 146px;
+  }
 }
 .example__title {
   font-weight: 700;
